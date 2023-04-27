@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 10vh;
+}
+
+.logo {
+    flex: 35%;
+    margin-left: 5%;
+}
+
+.logo>h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    color: #318F4A;
+}
+
+.menu {
+    flex: 65%;
+    margin-right: 5%;
+    padding: 15px;
+    text-align: right;
+}
+
+.menu a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 44px;
+    color: #000;
+    margin: 10px;
+}
+
+.menu a:hover{
+    color: #318F4A;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 2%;
+    height: 80vh;
+}
+
+.left{
+    flex: 30%;
+    margin-left: 10%;
+}
+
+.left > h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 88px;
+    color: #318F4A;
+}
+
+.left > p{
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 44px;
+    color: #000;
+    
+}
+
+.left > .button-div{
+    width: 200px;
+    margin-left: 128px;
+}
+
+.left > .button-div button{
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-color: #318F4A;
+    border-radius: 5px;
+    font-family: 'Indie Flower', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFF;
+    cursor: pointer;
+    transition: width 2s;
+}
+
+.left > .button-div:hover button{
+    display: flex;
+    width: 210px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left > .button-div #arrow{
+    display: none;
+}
+
+.left > .button-div:hover #arrow{
+    display: block;
+}
+
+.right{
+    flex: 48%;
+    margin-right: 4%;
+}
+
+.right .circle-father{
+    position: relative;
+    float: right;
+    width: 435px;
+    height: 435px;
+    background: #24401A;
+    border-radius: 300px;
+}
+
+.right .circle-child{
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    background: url("../assets/pexels-oziel-gómez-837267.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 300px;
+    left: -10%;
+}
