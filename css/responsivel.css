@@ -1,7 +1,7 @@
 @media only screen and (max-width:970px) {
 
     body{
-        background: url("/assets/pexels-oziel-gómez-837267.jpg");
+        background: url("../assets/pexels-oziel-gómez-837267.jpg");
         background-size: cover;
         background-position: top;
     }
@@ -43,7 +43,7 @@
 @media only screen and (max-width:670px){
 
     body{
-        background: url("/assets/cactusMob.png");
+        background: url("../assets/cactusMob.png");
         background-size: cover;
         background-position: right;
     }
