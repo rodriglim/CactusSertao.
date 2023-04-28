@@ -1,9 +1,9 @@
 @media only screen and (max-width:970px) {
 
     body{
-        background: url("../assets/pexels-oziel-gómez-837267.jpg");
+        background: url("../assets/cactusmob.png");
         background-size: cover;
-        background-position: top;
+        background-position: center;
     }
 
     nav{
@@ -41,13 +41,9 @@
 }
 
 @media only screen and (max-width:670px){
-
     body{
-        background: url("../assets/cactusMob.png");
-        background-size: cover;
-        background-position: right;
+        background-position: top;
     }
-
     .menu{
         display: none;
     }
