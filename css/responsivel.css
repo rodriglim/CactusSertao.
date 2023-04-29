@@ -1,13 +1,15 @@
 @media only screen and (max-width:970px) {
 
-    body{
+    body {
         background: url("../assets/cactusmob.png");
         background-size: cover;
         background-position: center;
     }
-    nav{
-        background: rgba(255,255,255, 0.2);
+
+    nav {
+        background: rgba(255, 255, 255, 0.2);
     }
+
     .left {
         flex: 100%;
         margin: 0;
@@ -15,63 +17,102 @@
         margin-top: -5%;
     }
 
-    .left > p{
+    .left>p {
         position: relative;
         top: 70px
     }
-    
-    .left > .button-div{
-       width: 30%;
-       float: right;
-       margin-right: 35%;
+
+    .left>.button-div {
+        width: 30%;
+        float: right;
+        margin-right: 35%;
     }
 
-    .right{
-        flex: 100%;  
+    .right {
+        flex: 100%;
         margin: 0;
     }
 
-    .right .circle-father{
-       display: none;
+    .right .circle-father {
+        display: none;
     }
 
-    .right .circle-child{
+    .right .circle-child {
+        display: none;
+    }
+
+    #section-one {
+        height: 10vh;
+        margin-top: -10%;
+    }
+
+    #section-one>.text-section {
+        text-align: center;
+        margin: 0;
+    }
+
+    #section-one>.img-section {
+        display: none;
+    }
+
+    #section-two .left{
+        flex: 100%;
+        margin-top: 10%;
+    }
+
+    #section-two .left > p{
+        width: 100%;
+        font-size: 18px;
+        margin-top: -10%;
+    }
+
+    #section-two > .right{
         display: none;
     }
 }
 
-@media only screen and (max-width:670px){
+@media only screen and (max-width:670px) {
 
-    body{
+    body {
         background-position: right;
     }
 
-    .menu{
+    .menu {
         display: none;
     }
-    .logo{
+
+    .logo {
         text-align: center;
         margin: 0;
     }
 
-    .left > h2{
+    .left>h2 {
         font-size: 36px;
     }
-    .left > p{
+
+    .left>p {
         font-size: 20px;
     }
 
-    .left > .button-div{
+    .left>.button-div {
         position: relative;
-     }
- 
-     .left > .button-div button{
+    }
+
+    .left>.button-div button {
         position: absolute;
         text-align: center;
         transform: translate(-50%, 15%);
         width: 200px;
-     }
-     .left > .button-div:hover button{
+    }
+
+    .left>.button-div:hover button {
         transform: translate(-20%, 15%);
+    }
+
+    
+    #section-two .left > p{
+        width: 100%;
+        font-size: 18px;
+        margin-top: -18%;
     }
 }
