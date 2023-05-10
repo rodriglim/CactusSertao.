@@ -1,237 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-* {
+*{
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
     font-family: 'Indie Flower', cursive;
 }
 
-nav {
-    background-color: #fff;
+body{
+    margin: 0;
+    background-color: #FFFFFF;
+    height: auto;
+}
+
+nav{
     display: flex;
+    flex: 100%;
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
     height: 10vh;
 }
 
-.logo {
-    flex: 35%;
-    margin-left: 5%;
+.logo{
+    flex: 40%;
+    margin-left: 10%;
 }
 
-.logo>h1 {
+.logo h1{
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 34px;
     line-height: 50px;
     color: #318F4A;
 }
 
-.menu {
-    flex: 65%;
-    margin-right: 5%;
-    padding: 15px;
+.menu{
+    flex: 40%;
+    margin-right: 10%;
     text-align: right;
 }
 
-.menu a {
+.menu a{
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 44px;
-    color: #000;
-    margin: 10px;
+    color: #000000;
+    padding: 0 10px;
 }
 
-.menu a:hover {
+.menu a:hover{
     color: #318F4A;
-}
+    border-bottom: 4px solid #318F4A;
+} 
 
-header {
+header{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: 100%;
     height: 90vh;
 }
 
-.left {
-    flex: 30%;
+.left{
+    position: relative;
+    flex: 40%;
     margin-left: 10%;
-    margin-top: -4%;
 }
 
-.left>h2 {
+.left p{
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.left h2{
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
-    line-height: 88px;
+    line-height: 55px;
     color: #318F4A;
 }
 
-.left>p {
-    position: absolute;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 44px;
-    color: #000;
-
-}
-
-.left>.button-div {
-    width: 200px;
-    margin-left: 128px;
-}
-
-.left>.button-div button {
-    width: 200px;
-    height: 60px;
-    border: none;
+#button-id{
     background-color: #318F4A;
-    border-radius: 5px;
-    font-family: 'Indie Flower', cursive;
+    border: none;
+    border-radius: 10px;
+    width: 220px;
+    height: 60px;
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #FFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 38px;
+    color: #FFFFFF;
     cursor: pointer;
-    transition: width 2s;
+    transition: width 1s;
 }
 
-.left>.button-div:hover button {
-    display: flex;
-    width: 210px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left>.button-div #arrow {
+#arrow{
     display: none;
 }
 
-.left>.button-div:hover #arrow {
+#button-id:hover{
+    width: 240px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#button-id:hover #arrow{
     display: block;
 }
 
-.right {
-    flex: 48%;
-    margin-right: 4%;
+.right{
+    display: 48%;
+    margin-right: 2%;
 }
 
-.right .circle-father {
+.circle-father, .circle-child{
     position: relative;
-    float: right;
-    width: 435px;
-    height: 435px;
-    background: #24401A;
+    width: 420px;
+    height: 400px;
+    background-color: #24401A;
     border-radius: 300px;
 }
 
-.right .circle-child {
+.circle-father > .circle-child{
     position: absolute;
-    width: 435px;
-    height: 435px;
-    background: url("../assets/pexels-oziel-gómez-837267.jpg");
-    background-repeat: no-repeat;
+    background: url("../assets/cactus-img.png");
     background-size: cover;
-    background-position: center;
-    border-radius: 300px;
-    left: -10%;
+    right: 12%;
 }
-
-#section-one {
-    background-color: #318F4A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row nowrap;
-    height: 28vh;
-}
-
-#section-one .text-section{
-    flex: 40%;
-    margin-left: 10%;
-    
-}
-
-#section-one .text-section > p{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 58px;
-    color: #FFF;
-}
-
-#section-one .img-section{
-    flex: 50%;
-    height: 100%;
-    background: url("../assets/cact.png");
-    background-size: cover;
-    background-position: top;
-    border: 2px solid whitesmoke;
-}
-
-#section-two{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row nowrap;
-    margin-top: 2%;
-}
-
-#section-two .left{
-    flex: 45%;
-    margin: 0;
-
-}
-
-#section-two .left > h3{
-    margin-top: -10%;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 58px;
-    text-align: center;
-    color: #318F4A;
-}
-
-#section-two .left > p{
-    margin-top: -2%;
-    width: 50%;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 35px;
-    text-align: center;
-}
-
-
-#section-two .right{
-    flex: 50%;
-    text-align: right;
-}
-
-#section-two .right .circle-father {
-    position: relative;
-    float: right;
-    width: 435px;
-    height: 435px;
-    background: #318F4A;
-    border-radius: 300px;
-}
-
-#section-two .right  img{
-    position: absolute;
-    width: 430px;
-    height: 430px;
-    left: -10%;
-}
-
-
