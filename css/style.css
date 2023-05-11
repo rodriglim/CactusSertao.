@@ -134,3 +134,77 @@ header{
     background-size: cover;
     right: 12%;
 }
+
+#section-phrase{
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: auto;
+    background-color: #DEF7E5;
+    margin-top: 1%;
+}
+
+#section-phrase > p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 58px;
+    color: #24401A;
+}
+
+#section-about-us{
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: auto;
+    margin-top: 2%;
+}
+
+#section-about-us > .left{
+    flex: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -20%;
+}
+
+#section-about-us > .left h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    color: #318F4A;
+}
+
+#section-about-us > .left p{
+    width: 100%;
+    margin-top: -2%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+}
+
+#section-about-us > .right{
+    flex: 45%;
+    margin-right: 0;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+#section-about-us > .right .circle-father{
+    width: 400px;
+    height: 400px;
+    text-align: right;
+    background-color: #318F4A;
+}
+
+#section-about-us .right .circle-father > .circle-child{
+    background: url("../assets/cactus-img-woman.png");
+    background-size: cover;
+    left: -15%;
+}

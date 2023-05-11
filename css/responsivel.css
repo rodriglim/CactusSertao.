@@ -1,86 +1,179 @@
-@media only screen and (max-width: 940px){
-    .logo{
+@media only screen and (max-width: 980px) {
+    .logo {
         flex: 35%;
         margin-left: 5%;
     }
-    .menu{
+
+    .menu {
         flex: 55%;
         margin-right: 5%;
         text-align: center;
     }
 
-    .left{
+    .left {
         position: relative;
         flex: 55%;
         margin-left: 5%;
     }
-    .right{
+
+    .right {
         flex: 40%;
         margin-right: 0%;
     }
-    
-    .circle-father, .circle-child{
+
+    .circle-father,
+    .circle-child {
         position: relative;
         width: 320px;
         height: 320px;
         background-color: #24401A;
         border-radius: 300px;
     }
+
+    #section-about-us>.right .circle-father {
+        width: 350px;
+        height: 350px;
+    }
+
+    #section-about-us .right .circle-father>.circle-child {
+        background: url("../assets/cactus-img-woman.png");
+        background-size: cover;
+        left: -8%;
+    }
 }
 
-@media only screen and (max-width:800px){
-    .menu{
+
+
+@media only screen and (max-width:912px) {
+    .menu {
         display: none;
     }
 
-    .logo{
+    .logo {
         flex: 100%;
         text-align: center;
         margin: 0;
     }
 
-    .left{
+    .left {
         flex: 100%;
         text-align: center;
         margin: 0;
     }
-    .left p{
+
+    .left p {
         position: relative;
         bottom: -50px;
     }
-    #button-id{
+
+    #button-id {
         display: none;
     }
 
-    .right{
+    .right {
         flex: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: -5%;
     }
 
-    .circle-father{
+    .circle-father {
         position: relative;
         width: 214px;
-        height: 320px;
+        height: 440px;
+        margin-bottom: 8%;
     }
 
-    .circle-father > .circle-child{
+    .circle-father>.circle-child {
         width: 100%;
         height: 100%;
         background: url("../assets/cactus.jpg");
         background-size: cover;
+        background-position: center;
         border-radius: 300px;
         right: inherit;
     }
+
+    #section-phrase {
+        position: relative;
+        flex: 100%;
+        margin-bottom: 15%;
+    }
+
+    #section-about-us {
+        flex-flow: row wrap;
+    }
+
+    #section-about-us > .left{
+        flex: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: -15%;
+    }
+
+    #section-about-us > .left p{
+        width: 100%;
+        margin-top: -10%;
+    }
+    
+    #section-about-us > .right{
+        flex: 100%;
+        margin-right: 0;
+        margin-left: 5%;
+        margin-top: 8%;
+    }
+    
+    #section-about-us > .right .circle-father{
+        width: 350px;
+        height: 350px;
+    }
+
 }
 
-@media only screen and (max-width: 600px){
-    .left p{
-        font-size: 28px;
-        bottom: -40px;
+    @media only screen and (max-width: 600px) {
+
+        .right {
+            margin-top: -2%;
+        }
+    
+        .circle-father {
+            position: relative;
+            width: 214px;
+            height: 310px;
+            margin-bottom: 0%;
+        }
+        .left p {
+            font-size: 28px;
+            bottom: -40px;
+        }
+
+        .left h2 {
+            font-size: 34px;
+        }
+
+        #section-phrase{
+            width: 100%;
+            height: 100%;
+        }
+
+        #section-phrase > p{
+           font-size: 24px;
+        }
+
+        #section-about-us{
+            margin-bottom: 5%;
+        }
+        
+        #section-about-us > .left h3{
+            font-size: 30px;
+        }
+
+        #section-about-us > .left p{
+            font-size: 24px;
+        }
+        
+        #section-about-us > .right{
+            display: none;
+        }
     }
-    .left h2{
-        font-size: 34px;
-    }
-}
