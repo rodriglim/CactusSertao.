@@ -1,179 +1,87 @@
-@media only screen and (max-width: 980px) {
-    .logo {
-        flex: 35%;
-        margin-left: 5%;
-    }
-
-    .menu {
-        flex: 55%;
-        margin-right: 5%;
-        text-align: center;
-    }
-
-    .left {
+@media only screen and (max-width:920px){
+    nav{
         position: relative;
-        flex: 55%;
-        margin-left: 5%;
     }
 
-    .right {
-        flex: 40%;
-        margin-right: 0%;
-    }
-
-    .circle-father,
-    .circle-child {
-        position: relative;
-        width: 320px;
-        height: 320px;
-        background-color: #24401A;
-        border-radius: 300px;
-    }
-
-    #section-about-us>.right .circle-father {
-        width: 350px;
-        height: 350px;
-    }
-
-    #section-about-us .right .circle-father>.circle-child {
-        background: url("../assets/cactus-img-woman.png");
-        background-size: cover;
-        left: -8%;
-    }
-}
-
-
-
-@media only screen and (max-width:912px) {
-    .menu {
+    nav .menu{
         display: none;
     }
-
-    .logo {
-        flex: 100%;
+    
+    nav .logo{
         text-align: center;
         margin: 0;
+        margin-top: 10px;
     }
 
-    .left {
+    nav .logo > h1{
+        display: block;
+    }
+
+    header .left{
         flex: 100%;
-        text-align: center;
         margin: 0;
+        margin-left: 0%;
+        text-align: center;
     }
 
-    .left p {
+    header .left > p{
         position: relative;
-        bottom: -50px;
+        margin: 0;
+        margin-bottom: -60px;
     }
 
-    #button-id {
+    header .left > #btn-id{
         display: none;
     }
-
-    .right {
-        flex: 100%;
+    header .right{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -5%;
-        margin-bottom: 8%;
+        padding-top: 30px;
+        margin-left: 0;
     }
-
-    .circle-father {
+    header .right .circle-father > .circle-child{
         position: relative;
-        width: 214px;
-        height: 440px;
+        left: 0;
     }
 
-    .circle-father>.circle-child {
-        width: 100%;
-        height: 100%;
-        background: url("../assets/cactus.jpg");
-        background-size: cover;
-        background-position: center;
-        border-radius: 300px;
-        right: inherit;
+    #about .right-about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    header .left > p{
+        font-size: 26px;
+        line-height: 38px;
     }
 
-    #section-phrase {
-        flex: 100%;
-        margin-top: 5%;
-        margin-bottom: 10%;
+    header .left > h2{
+        font-size: 34px;
     }
 
-    #section-about-us {
-        flex-flow: row wrap;
+    header .right .circle-father{
+        width: 192px;
+        height: 300px;
     }
 
-    #section-about-us > .left{
-        flex: 100%;
+    #phrase p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    #about .left-about{
         text-align: center;
-        margin: 0 auto;
-        margin-top: -15%;
+        margin: 0;
     }
 
-    #section-about-us > .left p{
-        width: 100%;
-        margin-top: -10%;
+    #about .right-about{
+       display: none;
     }
-    
-    #section-about-us > .right{
-        flex: 100%;
-        margin-right: 0;
-        margin-left: 5%;
-        margin-top: 8%;
-    }
-    
-    #section-about-us > .right .circle-father{
-        width: 350px;
-        height: 350px;
+    #about .circle-father{
+        display: none;
     }
 
 }
-
-    @media only screen and (max-width: 600px) {
-
-        .right {
-            margin-top: -2%;
-            margin-bottom: 8%;
-        }
-    
-        .circle-father {
-            position: relative;
-            width: 214px;
-            height: 340px;
-        }
-        .left p {
-            font-size: 28px;
-            bottom: -40px;
-        }
-
-        .left h2 {
-            font-size: 34px;
-        }
-
-        #section-phrase{
-            width: 100%;
-            height: 100%;
-        }
-
-        #section-phrase > p{
-           font-size: 24px;
-        }
-
-        #section-about-us{
-            margin-bottom: 5%;
-        }
-        
-        #section-about-us > .left h3{
-            font-size: 30px;
-        }
-
-        #section-about-us > .left p{
-            font-size: 24px;
-        }
-        
-        #section-about-us > .right{
-            display: none;
-        }
-    }

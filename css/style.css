@@ -1,31 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-*{
+* {
     box-sizing: border-box;
-    font-family: 'Indie Flower', cursive;
 }
 
-body{
+body {
     margin: 0;
-    background-color: #FFFFFF;
+    font-family: 'Indie Flower', cursive;
     height: auto;
 }
 
-nav{
+nav {
     display: flex;
-    flex: 100%;
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
-    height: 10vh;
+    height: 100px;
 }
 
-.logo{
+.logo {
     flex: 40%;
     margin-left: 10%;
 }
 
-.logo h1{
+.logo h1 {
+    display: inline-block;
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
@@ -33,145 +32,154 @@ nav{
     color: #318F4A;
 }
 
-.menu{
-    flex: 40%;
-    margin-right: 10%;
+.menu {
+    flex: 45%;
+    margin-right: 5%;
     text-align: right;
+    padding: 20px;
 }
 
-.menu a{
+.menu a {
+    display: inline-block;
     text-decoration: none;
+    padding: 0 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 44px;
     color: #000000;
-    padding: 0 10px;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: #318F4A;
     border-bottom: 4px solid #318F4A;
-} 
+}
 
-header{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    height: 90vh;
+    padding-top: 10px;
+    height: auto;
 }
 
-.left{
-    position: relative;
+header .left {
     flex: 40%;
     margin-left: 10%;
 }
 
-.left p{
+header .left>p {
     position: absolute;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 30px;
-    color: #000000;
-}
-
-.left h2{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 55px;
-    color: #318F4A;
-}
-
-#button-id{
-    background-color: #318F4A;
-    border: none;
-    border-radius: 10px;
-    width: 220px;
-    height: 60px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 38px;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: width 1s;
-}
-
-#arrow{
-    display: none;
-}
-
-#button-id:hover{
-    width: 240px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#button-id:hover #arrow{
-    display: block;
-}
-
-.right{
-    display: 48%;
-    margin-right: 2%;
-}
-
-.circle-father, .circle-child{
-    position: relative;
-    width: 420px;
-    height: 400px;
-    background-color: #24401A;
-    border-radius: 300px;
-}
-
-.circle-father > .circle-child{
-    position: absolute;
-    background: url("../assets/cactus-img.png");
-    background-size: cover;
-    right: 12%;
-}
-
-#section-phrase{
-    display: flex;
-    flex: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row nowrap;
-    height: auto;
-    background-color: #DEF7E5;
-    margin-top: 1%;
-}
-
-#section-phrase > p{
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 58px;
-    color: #24401A;
+    line-height: 44px;
+    color: #000000;
 }
 
-#section-about-us{
+header .left>h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 88px;
+    color: #318F4A;
+}
+
+header .left>#btn-id {
+    background: #318F4A;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 60px;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#arrow {
+    display: none;
+}
+
+header .left>#btn-id:hover {
+    width: 230px;
     display: flex;
-    flex: 100%;
+    justify-content: space-around;
+    align-items: center;
+    transition: width 2s;
+}
+
+header .left>#btn-id:hover #arrow {
+    display: block;
+}
+
+header .right {
+    flex: 40%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+header .right>.circle-father {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #318F4A;
+    border-radius: 300px;
+}
+
+header .right .circle-father>.circle-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+    left: -10%;
+}
+
+header .right .circle-father>.circle-child img {
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#phrase {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
-    height: auto;
+    height: 100px;
+    margin-bottom: 0;
     margin-top: 2%;
+    background-color: #DEF7E5;
 }
 
-#section-about-us > .left{
+#phrase p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    color: #24401A;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: auto;
+}
+
+#about .left-about {
     flex: 50%;
     text-align: center;
-    margin: 0 auto;
-    margin-top: -20%;
 }
 
-#section-about-us > .left h3{
+#about .left-about h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -179,9 +187,8 @@ header{
     color: #318F4A;
 }
 
-#section-about-us > .left p{
-    width: 100%;
-    margin-top: -2%;
+#about .left-about p {
+    font-family: 'Indie Flower';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -189,22 +196,29 @@ header{
     color: #000000;
 }
 
-#section-about-us > .right{
-    flex: 45%;
-    margin-right: 0;
-    margin-left: 5%;
-    margin-top: 2%;
+#about .right-about{
+    flex: 30%;
+    float: right;
 }
-
-#section-about-us > .right .circle-father{
+#about .right-about >.circle-father {
+    position: relative;
     width: 400px;
     height: 400px;
-    text-align: right;
     background-color: #318F4A;
+    border-radius: 300px;
 }
 
-#section-about-us .right .circle-father > .circle-child{
-    background: url("../assets/cactus-img-woman.png");
-    background-size: cover;
-    left: -15%;
+#about .right-about .circle-father > .circle-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+    left: -10%;
+}
+
+#about .right-about .circle-father> .circle-child img {
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+    object-fit: cover;
 }
