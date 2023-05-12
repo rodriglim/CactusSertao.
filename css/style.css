@@ -257,12 +257,12 @@ header .right .circle-father>.circle-child img {
     margin-top: -30px;
 }
 
-.main-carousel{
+.main-carousel {
     position: relative;
     width: 60%;
-
 }
-.cell{
+
+.cell {
     width: 240px;
     height: 300px;
     margin: 0 15px;
@@ -271,7 +271,7 @@ header .right .circle-father>.circle-child img {
     background: rgba(49, 143, 74, 0.5);
 }
 
-.cell img{
+.cell img {
     width: 240px;
     height: 300px;
     border-radius: 100px;
@@ -279,8 +279,86 @@ header .right .circle-father>.circle-child img {
     object-position: center;
 }
 
-.cell img:hover{
+.cell img:hover {
     position: absolute;
     transform: scale(1.3);
     -webkit-transform: scale(1.3);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: auto;
+    background-color: #318F4A;
+    margin-top: 4%;
+}
+
+.contact-text {
+    flex: 98%;
+    margin-left: 2%;
+}
+
+.contact-text>h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.left-contact {
+    flex: 60%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.left-contact>.contact-inform a {
+    position: absolute;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+.left-contact>.contact-inform a:hover {
+    color: #000000;
+    transition: 1s;
+}
+
+.left-contact>.contact-inform img {
+    width: 35px;
+    height: 35px;
+}
+
+.redes-sociais {
+    flex: 30%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.redes-sociais p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.redes-sociais img:hover{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+
+
 }

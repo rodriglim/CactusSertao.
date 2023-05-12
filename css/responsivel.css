@@ -50,6 +50,10 @@
         align-items: center;
         justify-content: center;
     }
+    
+    .main-carousel{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 700px){
@@ -83,5 +87,38 @@
     #about .circle-father{
         display: none;
     }
+    footer{
+        margin-top: 15%;
+    }
 
+    .contact-text{
+        text-align: center;
+        margin: 0;
+    }
+    .left-contact{
+        flex: 100%;
+        margin: 0;
+        margin-top: -10%;
+        margin-bottom: 5%;
+    }
+
+    .left-contact .contact-inform{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contact-inform img{
+        margin: 20px 0;
+    }
+
+    .contact-inform a{
+        margin-top: 60px;
+    }
+
+    .redes-sociais {
+        margin-bottom: 4%;
+    }
+    
 }
