@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsivel.css">
     <link rel="shortcut icon" href="assets/icons8-cacto-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>CactusSertão</title>
 </head>
 
@@ -67,6 +69,51 @@
             </div>
         </div>
     </section>
+
+    <section id="photos">
+        <div class="text-photos">
+            <h3>Fotos</h3>
+            <p>
+                Deixa sua casa mais bela,<br> com nossos cactus
+            </p>
+        </div>
+
+        <div class="main-carousel">
+            <div class="cell">
+                <img src="assets/pexels-dominika-roseclay-1856430-removebg-preview.png" alt="">
+            </div>
+            <div class="cell"><img src="assets/pexels-pixabay-219779-removebg-preview.png" alt=""></div>
+
+            <div class="cell"><img src="assets/pexels-scott-webb-1931152-removebg-preview.png" alt=""></div>
+
+            <div class="cell">
+                <img src="assets/pexels-thang-cao-10146764-removebg-preview.png" alt="">
+            </div>
+            <div class="cell">
+                <img src="assets/pexels-rumeysa-akbaş-13799803-removebg-preview.png" alt="">
+            </div>
+            <div class="cell">
+                <img src="assets/pexels-rafa-de-97260-removebg-preview.png" alt="">
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+        $('.main-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            wrapAround: true,
+            freeScroll: true,
+
+        });
+    </script>
+
 </body>
 
 </html>
