@@ -100,21 +100,25 @@
         margin: 0;
         margin-top: -10%;
         margin-bottom: 5%;
+        
     }
 
     .left-contact .contact-inform{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
 
     }
 
     .contact-inform img{
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .contact-inform a{
-        margin-top: 60px;
+        text-align: center;
+        flex-flow: row wrap;
+        margin-top: 50px;
     }
 
     .redes-sociais {
