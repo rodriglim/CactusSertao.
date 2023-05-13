@@ -155,15 +155,16 @@ header .right .circle-father>.circle-child img {
     height: 100px;
     margin-bottom: 0;
     margin-top: 2%;
-    background-color: #DEF7E5;
+    background: rgba(49, 143, 74, 0.9);
+
 }
 
 #phrase p {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 30px;
     line-height: 48px;
-    color: #24401A;
+    color: #FFFFFF;
 }
 
 #about {
